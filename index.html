@@ -54,23 +54,16 @@ button:hover {
 
         function playMusic() {
             audio.play();
+            document.getElementById("musicBoxImage").classList.add("rotating");
         }
 
         function stopMusic() {
             audio.pause();
             audio.currentTime = 0;
+            document.getElementById("musicBoxImage").classList.remove("rotating");
         }
     </script>
-    function playMusic() {
-    audio.play();
-    document.getElementById("musicBoxImage").classList.add("rotating");
-}
-
-function stopMusic() {
-    audio.pause();
-    audio.currentTime = 0;
-    document.getElementById("musicBoxImage").classList.remove("rotating");
-}
+   
 
 </body>
 </html>
