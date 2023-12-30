@@ -26,7 +26,7 @@ body, html {
 #windingKey {
     position: absolute;
     right: -60px; /* Adjust position as needed */
-    bottom: 50px; /* Adjust position as needed */
+    bottom: 10px; /* Adjust position as needed */
     width: 50px; /* Adjust size as needed */
     cursor: pointer;
 }
