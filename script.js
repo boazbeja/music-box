@@ -5,16 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
     var isPlaying = false;
 
     function toggleMusic() {
-        windingSound.play();
-        if (isPlaying) {
-            musicBoxAudio.pause();
-            musicBoxImage.style.transform = "none";
-        } else {
-            musicBoxAudio.play();
-            musicBoxImage.style.transform = "rotate(10deg)";
-        }
-        isPlaying = !isPlaying;
+    windingSound.play();
+    if (isPlaying) {
+        musicBoxAudio.pause();
+        musicBoxImage.classList.remove("swinging");
+    } else {
+        musicBoxAudio.play();
+        musicBoxImage.classList.add("swinging");
     }
+    isPlaying = !isPlaying;
+}
 
     window.toggleMusic = toggleMusic; // Make the function globally accessible for the onclick event
 });
