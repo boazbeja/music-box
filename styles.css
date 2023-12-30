@@ -28,7 +28,7 @@ body, html {
 }
 
 #musicBoxImage {
-    max-width: 500px; /* Adjust as needed */
+    max-width: 1000px; 
     transition: transform 1s ease;
 }
 
