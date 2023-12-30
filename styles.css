@@ -23,14 +23,12 @@ body, html {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end; /* Aligns container to the bottom */
 }
 
 #musicBoxContainer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative; /* Relative to backgroundImage */
+    margin-bottom: 20px; /* Space from the bottom of the backgroundImage */
 }
 
 #musicBoxImage {
@@ -42,7 +40,7 @@ body, html {
     transform: rotate(90deg);
     position: absolute;
     right: -60px; /* Position relative to the container */
-    top: 50%; /* Position relative to the container */
+    bottom: 0; /* Align at the bottom of the container */
     width: 30px; /* Adjust as needed */
     cursor: pointer;
 }
