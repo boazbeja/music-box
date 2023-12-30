@@ -9,7 +9,7 @@ body, html {
     top: 20%; /* Adjust as needed */
     left: 50%; /* Adjust to center horizontally */
     transform: translate(-50%, -50%); /* Adjust to center horizontally */
-    font-size: 40px;
+    font-size: 72px;
     color: #ff0000;
     font-weight: bold;
     text-align: center;
@@ -31,7 +31,7 @@ body, html {
 }
 
 #musicBoxImage {
-    max-width: 1000px; 
+    max-width: 600px; 
     transition: transform 1s ease;
 }
 
