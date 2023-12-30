@@ -23,25 +23,25 @@ body, html {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Aligns container to the bottom */
+    align-items: flex-end; /* Aligns children at the bottom */
 }
 
 #musicBoxContainer {
-    position: relative; /* Relative to backgroundImage */
-    margin-bottom: 20px; /* Space from the bottom of the backgroundImage */
+    position: relative;
+    margin-bottom: 20px; /* Adjust space from the bottom edge of backgroundImage */
 }
 
 #musicBoxImage {
-    width: 500px; /* Adjust as needed */
+    width: 500px; /* Adjust size as needed */
     height: auto;
 }
 
 #windingKey {
     transform: rotate(90deg);
     position: absolute;
-    right: -60px; /* Position relative to the container */
-    bottom: 70pz; /* Align at the bottom of the container */
-    width: 30px; /* Adjust as needed */
+    right: 10%; /* Adjust position as needed */
+    top: -100px; /* Adjust position as needed */
+    width: 100px; /* Adjust size as needed */
     cursor: pointer;
 }
 
