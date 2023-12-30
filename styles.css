@@ -32,10 +32,13 @@ body, html {
 
 #musicBoxImage {
     max-width: 600px; 
+    #musicBoxImage {
     position: absolute;
-    right: 0px; /* Adjust position as needed */
-    bottom: 0px; /* Adjust position as needed */
-    width: 50px;
+    top: 10%;  /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%); /* Centers the image */
+    /* Add any additional styling */
+}
     transition: transform 1s ease;
 }
 
