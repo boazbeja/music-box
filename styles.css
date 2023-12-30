@@ -26,22 +26,24 @@ body, html {
     align-items: center;
 }
 
-#musicBoxImage {
-    width: 500px; /* Increased width */
-    height: auto;
+#musicBoxContainer {
     position: absolute;
-    top: 10%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: transform 1s ease;
+}
+
+#musicBoxImage {
+    width: 500px; /* Adjust as needed */
+    height: auto;
 }
 
 #windingKey {
     transform: rotate(90deg);
     position: absolute;
-    right: -60px;
-    bottom: -170px;
-    width: 30px; /* Decreased width */
+    right: -60px; /* Position relative to the container */
+    top: 50%; /* Position relative to the container */
+    width: 30px; /* Adjust as needed */
     cursor: pointer;
 }
 
