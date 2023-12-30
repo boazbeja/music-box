@@ -31,8 +31,9 @@ body, html {
 }
 
 #musicBoxImage {
-    max-width: 600px; 
-    #musicBoxImage {
+    width: 300px;  /* Set the width */
+    height: auto;  /* Height will be set automatically to maintain aspect ratio */
+}
     position: absolute;
     top: 10%;  /* Adjust vertical position */
     left: 50%; /* Adjust horizontal position */
