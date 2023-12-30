@@ -30,3 +30,12 @@ body, html {
     width: 50px; /* Adjust size as needed */
     cursor: pointer;
 }
+
+@keyframes swingMusicBox {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+}
+
+.swinging {
+    animation: swingMusicBox 2s ease-in-out infinite;
+}
