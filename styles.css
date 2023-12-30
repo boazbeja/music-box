@@ -1,0 +1,32 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#backgroundImage {
+    background-image: url('path_to_tel_aviv_panorama.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#musicBoxContainer {
+    position: relative;
+}
+
+#musicBoxImage {
+    max-width: 300px; /* Adjust as needed */
+    transition: transform 1s ease;
+}
+
+#windingKey {
+    position: absolute;
+    right: -60px; /* Adjust position as needed */
+    bottom: 50px; /* Adjust position as needed */
+    width: 50px; /* Adjust size as needed */
+    cursor: pointer;
+}
