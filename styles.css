@@ -6,9 +6,9 @@ body, html {
 
 #greetingText {
     position: absolute;
-    top: 20%; /* Adjust as needed */
-    left: 50%; /* Adjust to center horizontally */
-    transform: translate(-50%, -50%); /* Adjust to center horizontally */
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 72px;
     color: #ff0000;
     font-weight: bold;
@@ -27,21 +27,21 @@ body, html {
 }
 
 #musicBoxImage {
-    width: 300px;  /* Set the width */
-    height: auto;  /* Height will be set automatically to maintain aspect ratio */
+    width: 500px; /* Increased width */
+    height: auto;
     position: absolute;
-    top: 10%;  /* Adjust vertical position */
-    left: 50%; /* Adjust horizontal position */
-    transform: translate(-50%, -50%); /* Centers the image */
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: transform 1s ease;
 }
 
 #windingKey {
     transform: rotate(90deg);
     position: absolute;
-    right: -60px; /* Adjust position as needed */
-    bottom: -170px; /* Adjust position as needed */
-    width: 50px; /* Adjust size as needed */
+    right: -60px;
+    bottom: -170px;
+    width: 30px; /* Decreased width */
     cursor: pointer;
 }
 
