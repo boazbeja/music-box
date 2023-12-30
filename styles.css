@@ -5,15 +5,18 @@ body, html {
 }
 
 #greetingText {
-    font-size: 40px; /* Adjust size as needed */
-    color: #ff0000; /* Adjust color as needed */
+    position: absolute;
+    top: 20%; /* Adjust as needed */
+    left: 50%; /* Adjust to center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center horizontally */
+    font-size: 40px;
+    color: #ff0000;
     font-weight: bold;
     text-align: center;
-    margin: 20px 0; /* Adjust spacing as needed */
-    /* Add more styling as per your design preference */
 }
 
 #backgroundImage {
+    position: relative;
     background-image: url('beji_b_Tel_Aviv_cityscape_panoramic_view_from_bustling_city_squ_5022c11c-6d51-4dd1-ae45-e77832f36662.png');
     background-size: cover;
     background-position: center;
