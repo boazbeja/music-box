@@ -1,85 +1,20 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Virtual Music Box</title>
-    <style>
-        body {
-            text-align: center;
-            padding: 20px;
-        }
-        @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-.rotating {
-    animation: rotate 10s linear infinite;
-}
-#container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#musicBoxImage {
-    /* your existing styles */
-}
-
-#playButton {
-    width: 50px; /* Adjust size as needed */
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.5s;
-}
-
-        #musicBoxImage {
-            max-width: 100%;
-            height: auto;
-        }
-        button {
-    background-color: #4CAF50; /* Green background */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #45a049; /* Darker green */
-}
-
-    </style>
+    <title>Music Box in Tel Aviv</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Hallo Nachmi!</h1>
-    <img src="DALL·E 2023-12-09 09.47.05 - A detailed and imaginative music box design featuring clowns and vampires as musicians, surrounded by a large, mystical old tree at the center. The cl.jpg" id="musicBoxImage" alt="Music Box Image">
-    <br>
-    <img src="depositphotos_19284497-stock-photo-wind-up-key.jpg" id="playButton" alt="Play Music" onclick="playMusic()">
-    <button onclick="stopMusic()">Stop Music</button>
+    <div id="backgroundImage">
+        <div id="musicBoxContainer">
+            <img src="DALL·E 2023-12-09 09.47.05 - A detailed and imaginative music box design featuring clowns and vampires as musicians, surrounded by a large, mystical old tree at the center. The cl.jpg" id="musicBoxImage" alt="Music Box">
+            <img src="depositphotos_19284497-stock-photo-wind-up-key.jpg" id="windingKey" alt="Winding Key" onclick="toggleMusic()">
+        </div>
+    </div>
     <audio id="musicBoxAudio" src="בצל ירוק - ונצואלה.mp3"></audio>
+    <audio id="windingSound" src="path_to_winding_sound.mp3"></audio>
 
-    <script>
-        var audio = document.getElementById("musicBoxAudio");
-
-        function playMusic() {
-            audio.play();
-            document.getElementById("musicBoxImage").classList.add("rotating");
-        }
-
-        function stopMusic() {
-            audio.pause();
-            audio.currentTime = 0;
-            document.getElementById("musicBoxImage").classList.remove("rotating");
-        }
-    </script>
-   
-
+    <script src="script.js"></script>
 </body>
 </html>
