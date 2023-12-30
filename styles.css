@@ -43,7 +43,7 @@ body, html {
     transform: rotate(90deg);
     position: absolute;
     right: -60px; /* Adjust position as needed */
-    bottom: -70px; /* Adjust position as needed */
+    bottom: -170px; /* Adjust position as needed */
     width: 50px; /* Adjust size as needed */
     cursor: pointer;
 }
