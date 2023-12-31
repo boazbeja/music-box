@@ -36,12 +36,17 @@ body, html {
     height: auto;
 }
 
+#musicBoxContainer {
+    position: relative;
+    /* Other styles... */
+}
+
 #windingKey {
     position: absolute;
-    left: 100%; /* Position to the left side of the music box */
-    top: 50%; /* Vertically center relative to the music box */
-    transform: translate(0, -50%) rotate(-90deg); /* Combine translate and rotate */
-    width: 125px; /* Adjust size as needed */
+    left: -60px; /* Moves the key to the left of the music box */
+    top: 50%; /* Center vertically relative to the music box */
+    transform: translate(0, -50%) rotate(-90deg); /* Adjust vertical centering and rotation */
+    width: 100px; /* Adjust size as needed */
     cursor: pointer;
 }
 
