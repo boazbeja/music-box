@@ -37,11 +37,10 @@ body, html {
 }
 
 #windingKey {
-    transform: rotate(-90deg);
     position: absolute;
     right: 100%; /* Position to the right side of the music box */
     top: 50%; /* Vertically center relative to the music box */
-    transform: translate(0, -50%) rotate(-90deg); /* Adjust vertical centering and rotation */
+    transform: translate(0, -50%) rotate(-90deg); /* Combine translate and rotate */
     width: 100px; /* Adjust size as needed */
     cursor: pointer;
 }
