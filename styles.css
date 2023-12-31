@@ -6,10 +6,10 @@ body, html {
 
 #greetingText {
     position: absolute;
-    top: 35%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 90px;
+    font-size: 80px;
     color: #ff0000;
     font-weight: bold;
     text-align: center;
