@@ -9,13 +9,13 @@ function toggleMusic() {
         windingSound.play();
         windingSound.onended = function() {
             musicBoxAudio.play();
-            musicBoxImg.classList.add('enlargingAndRotating');
+            musicBoxImg.classList.add('continuousRotateAndScale');
             isPlaying = true;
         };
     } else {
         musicBoxAudio.pause();
         musicBoxAudio.currentTime = 0;
-        musicBoxImg.classList.remove('enlargingAndRotating');
+        musicBoxImg.classList.remove('continuousRotateAndScale');
         isPlaying = false;
     }
 }
