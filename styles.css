@@ -32,12 +32,12 @@ body, html {
 }
 
 #musicBoxImage {
-    width: 500px; /* Adjust size as needed */
+    width: 750px; /* Adjust size as needed */
     height: auto;
 }
 
 #windingKey {
-    transform: rotate(270deg);
+    transform: rotate (270deg);
     position: absolute;
     right: 100%; /* Position to the right side of the music box */
     top: 50%; /* Vertically center relative to the music box */
