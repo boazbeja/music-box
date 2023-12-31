@@ -39,7 +39,7 @@ body, html {
 #windingKey {
     position: absolute;
     left: +20px; /* Moves the key to the left of the music box */
-    top: 80%; /* Center vertically relative to the music box */
+    top: -500px; /* Center vertically relative to the music box */
     transform: translate(0, -50%) rotate(-90deg); /* Adjust vertical centering and rotation */
     width: 80px; /* Adjust size as needed */
     cursor: pointer;
