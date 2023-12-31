@@ -1,10 +1,11 @@
 var isPlaying = false;
 var musicBoxAudio = document.getElementById('musicBoxAudio');
 var windingSound = document.getElementById('windingSound');
+var musicBoxImg = document.getElementById('musicBoxImage');
+
+musicBoxImg.addEventListener('click', toggleMusic);
 
 function toggleMusic() {
-    var musicBoxImg = document.getElementById('musicBoxImage');
-
     if (!isPlaying) {
         windingSound.play();
         windingSound.onended = function() {
