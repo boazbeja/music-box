@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', 
-    function toggleMusic() {
+ function toggleMusic() {
     var windingSound = document.getElementById('windingSound');
     var musicBoxAudio = document.getElementById('musicBoxAudio');
 
@@ -16,5 +16,5 @@ document.addEventListener('DOMContentLoaded',
         // Pause the music
         musicBoxAudio.pause();
         isPlaying = false;
-    }
-}
+    } 
+     
