@@ -6,10 +6,10 @@ body, html {
 
 #greetingText {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 100px;
+    font-size: 90px;
     color: #ff0000;
     font-weight: bold;
     text-align: center;
@@ -38,7 +38,7 @@ body, html {
 
 #windingKey {
     position: absolute;
-    left: +60px; /* Moves the key to the left of the music box */
+    left: +200px; /* Moves the key to the left of the music box */
     top: 50%; /* Center vertically relative to the music box */
     transform: translate(0, -50%) rotate(-90deg); /* Adjust vertical centering and rotation */
     width: 100px; /* Adjust size as needed */
