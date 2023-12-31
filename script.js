@@ -1,20 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var musicBoxAudio = document.getElementById('musicBoxAudio');
-    var windingSound = document.getElementById('windingSound');
-    var musicBoxImage = document.getElementById('musicBoxImage');
-    var isPlaying = false;
-
+document.addEventListener('DOMContentLoaded', 
     function toggleMusic() {
-    windingSound.play();
-    if (isPlaying) {
-        musicBoxAudio.pause();
-        musicBoxImage.classList.remove("swinging");
-    } else {
-        musicBoxAudio.play();
-        musicBoxImage.classList.add("swinging");
-    }
-    isPlaying = !isPlaying;
-}
+    var windingSound = document.getElementById('windingSound');
+    var musicBoxAudio = document.getElementById('musicBoxAudio');
 
-    window.toggleMusic = toggleMusic; // Make the function globally accessible for the onclick event
-});
+    if (!isPlaying) {
+        // Play winding sound first
+        windingSound.play();
+        
+        // Once winding sound ends, play the music
+        windingSound.onended = function() {
+            musicBoxAudio.play();
+            isPlaying = true;
+        };
+    } else {
+        // Pause the music
+        musicBoxAudio.pause();
+        isPlaying = false;
+    }
+}
