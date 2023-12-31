@@ -36,11 +36,6 @@ body, html {
     height: auto;
 }
 
-#musicBoxContainer {
-    position: relative;
-    /* Other styles... */
-}
-
 #windingKey {
     position: absolute;
     left: -60px; /* Moves the key to the left of the music box */
