@@ -45,12 +45,13 @@ body, html {
     cursor: pointer;
 }
 
-@keyframes enlargeAndRotate {
-    0% { transform: scale(1) rotate(0deg); }
-    50% { transform: scale(1.2) rotate(180deg); }
-    100% { transform: scale(1) rotate(360deg); }
+@keyframes rotateAndScale {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.2) rotate(90deg); }
+    50% { transform: scale(1) rotate(180deg); }
+    75% { transform: scale(1.2) rotate(270deg); }
 }
 
-.enlargingAndRotating {
-    animation: enlargeAndRotate 5s linear forwards;
+.continuousRotateAndScale {
+    animation: rotateAndScale 10s linear infinite; /* Adjust time as needed */
 }
